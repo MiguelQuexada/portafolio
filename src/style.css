@@ -16,6 +16,7 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
+  width: 98;
 }
 
 nav ul {
@@ -80,16 +81,20 @@ p {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #efeff2;
   color: #2e2e2e;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
+.btn:hover{
+  background-color: #dadae3;
+}
+
 .image-container {
   width: 30%;
-  background-color: #404040;
+  background-color: #333232;
   padding-top: 1%;
   padding-bottom: 1%;
   border-radius: 10px;
@@ -131,6 +136,20 @@ p {
   justify-content: center;
 }
 
+.card{
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.card-image{
+  width: 100%;
+  border-radius: 10px; 
+}
+
+
 @media only screen and (max-width: 768px) {
 
   /* For mobile phones: */
@@ -138,6 +157,7 @@ p {
     display: block;
     justify-content: center;
     padding: 60px 20px;
+    width: 92%;
   }
 
   [class*="image-container"] {
@@ -146,6 +166,11 @@ p {
 
   [class*="section"]{
     padding: 60px 20px;
+  }
+
+  [class*="card"]{
+    width: 94%;
+    padding: 3%;
   }
 
 }
